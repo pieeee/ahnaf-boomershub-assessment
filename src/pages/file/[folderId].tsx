@@ -1,3 +1,4 @@
+import BreadCrumb from "@app/components/BreadCrumb/BreadCrumb";
 import {
   selectChildDocuments,
   useDriveStore,
@@ -5,7 +6,7 @@ import {
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React from "react";
-const BreadCrumb = dynamic(() => import("@app/components/BreadCrumb"));
+// const BreadCrumb = dynamic(() => import("@app/components/BreadCrumb"));
 const Docuemnts = dynamic(() => import("@app/components/Documents"));
 
 const Folder = () => {
