@@ -5,12 +5,8 @@ import {
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React from "react";
-const BreadCrumb = dynamic(() => import("@app/components/BreadCrumb"), {
-  ssr: false,
-});
-const Docuemnts = dynamic(() => import("@app/components/Documents"), {
-  ssr: false,
-});
+const BreadCrumb = dynamic(() => import("@app/components/BreadCrumb"));
+const Docuemnts = dynamic(() => import("@app/components/Documents"));
 
 const Folder = () => {
   const router = useRouter();
