@@ -4,7 +4,7 @@ import styles from "@app/styles/components/folders.module.scss";
 import { useRouter } from "next/router";
 import { HiDownload, HiFolder, HiPencilAlt, HiTrash } from "react-icons/hi";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { AiFillFileUnknown } from "react-icons/ai";
+import { AiFillFile } from "react-icons/ai";
 import { Menu, MenuItem } from "@szhsin/react-menu";
 import { openNewFolderModalStore } from "../FolderActionModal";
 
@@ -35,7 +35,7 @@ const Documents: React.FC<{
             className={styles["folder-item"]}
           >
             {type === "file" ? (
-              <AiFillFileUnknown className={styles["folder-item__icon"]} />
+              <AiFillFile className={styles["folder-item__icon"]} />
             ) : (
               <HiFolder className={styles["folder-item__icon"]} />
             )}

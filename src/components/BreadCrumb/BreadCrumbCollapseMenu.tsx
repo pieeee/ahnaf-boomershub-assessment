@@ -4,8 +4,8 @@ import { IDocument } from "@app/lib/stores/useDriveStore";
 import { useRouter } from "next/router";
 import { BsThreeDots } from "react-icons/bs";
 import { FiHardDrive } from "react-icons/fi";
-import { BiFile } from "react-icons/Bi";
 import { HiFolder } from "react-icons/hi";
+import { AiFillFile } from "react-icons/ai";
 
 const BreadCrumbCollapseMenu: React.FC<{ documets: IDocument[] }> = ({
   documets,
@@ -32,7 +32,7 @@ const BreadCrumbCollapseMenu: React.FC<{ documets: IDocument[] }> = ({
           key={doc.id}
         >
           {doc.type === "file" ? (
-            <BiFile className="menu-item-icon" />
+            <AiFillFile className="menu-item-icon" />
           ) : (
             <HiFolder className="menu-item-icon" />
           )}
