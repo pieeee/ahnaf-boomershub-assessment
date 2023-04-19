@@ -1,0 +1,29 @@
+$gray-50: #f7f9fc;
+$gray-100: #e3e7ec;
+$gray-700: #808385;
+$gray-900: #444746;
+$blue-500: #0957d0;
+$blue-200: #c1e7fe;
+
+// shadow
+$shadow-sm: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+// break-points
+$breakpoints: (
+  "sm": (
+    min-width: 640px,
+  ),
+  "md": (
+    min-width: 768px,
+  ),
+  "lg": (
+    min-width: 1024px,
+  ),
+  "xl": (
+    min-width: 1280px,
+  ),
+  "2xl": (
+    min-width: 1536px,
+  ),
+);

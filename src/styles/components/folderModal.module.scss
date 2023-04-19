@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+.folder-modal {
+  max-width: 320px;
+  width: 320px;
+  padding: 0.5rem;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: $gray-900;
+  }
+
+  input {
+    width: 100%;
+    margin: 2rem 0;
+    border: 2px solid $blue-500;
+    outline: none;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 6px;
+  }
+
+  .folder-modal__btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      background-color: transparent;
+      color: $blue-500;
+      font-size: 16px;
+    }
+  }
+}

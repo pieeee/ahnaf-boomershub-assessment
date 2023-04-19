@@ -1,0 +1,56 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1rem 0;
+  font-size: 16px;
+  color: $gray-900;
+
+  @include respond-to("md") {
+    font-size: 20px;
+    gap: 12px;
+  }
+
+  .breadcrumb__collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: inherit;
+    background-color: transparent;
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+
+  .breadcrumb__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    @include respond-to("md") {
+      gap: 12px;
+    }
+  }
+
+  .breadcrumb__item__menu-btn {
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    padding: 8px 16px;
+    border-radius: 24px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../abstracts/variables";
+
+.header {
+  width: 100%;
+  min-height: 72px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+
+  .header__brand {
+    width: 240px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    color: $gray-900;
+  }
+}

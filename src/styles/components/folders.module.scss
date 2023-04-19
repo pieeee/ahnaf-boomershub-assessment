@@ -1,0 +1,74 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.folders {
+  padding: 0 1rem;
+  color: $gray-900;
+  margin: 2rem 0;
+
+  .folders__header {
+    margin-bottom: 1rem;
+  }
+
+  .folders__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+
+    @include respond-to("sm") {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include respond-to("lg") {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include respond-to("2xl") {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .folder-item {
+    background-color: $gray-50;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    max-width: 100%;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    button {
+      background-color: transparent;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      font-size: 18px;
+
+      &:hover {
+        background-color: rgb(213, 213, 213);
+      }
+    }
+
+    .folder-item__icon {
+      min-width: 18px;
+      font-size: 18px;
+      color: inherit;
+    }
+  }
+}
