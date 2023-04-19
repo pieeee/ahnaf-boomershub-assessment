@@ -8,7 +8,7 @@ import {
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "@app/styles/components/folderTree.module.scss";
-import { BiCaretRight, BiCaretDown } from "react-icons/Bi";
+import { AiFillCaretRight, AiFillCaretDown } from "react-icons/ai";
 import { HiFolder, HiFolderAdd, HiPencilAlt, HiTrash } from "react-icons/hi";
 import { FiHardDrive } from "react-icons/fi";
 import { ControlledMenu, MenuItem } from "@szhsin/react-menu";
@@ -119,7 +119,7 @@ const FolderTree: React.FC<{
           <div key={idx} className={styles["depth-placeholder"]} />
         ))}
         <button onClick={onToggleExpand}>
-          {isExpand ? <BiCaretDown /> : <BiCaretRight />}
+          {isExpand ? <AiFillCaretDown /> : <AiFillCaretRight />}
         </button>
         {isRoot ? (
           <button onClick={onClickLeft} className={styles["folder-btn"]}>
